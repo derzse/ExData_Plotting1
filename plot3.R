@@ -21,7 +21,7 @@ newdf$DateTime <- strptime(x, "%d/%m/%Y %H:%M:%S")
 rownames(newdf) <- 1:nrow(newdf)
 dim(newdf) 
 
-## Plotting the first graphic
+## Plotting the third graphic
 png(filename = "plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
 plot(newdf$DateTime, newdf$Sub_metering_1, type = "l", col = "black",
      xlab = "", ylab = "Energy sub metering")

@@ -21,7 +21,7 @@ newdf$DateTime <- strptime(x, "%d/%m/%Y %H:%M:%S")
 rownames(newdf) <- 1:nrow(newdf)
 dim(newdf) 
 
-## Plotting the first graphic
+## Plotting the fourth graphic
 png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 par(mfrow = c(2, 2))
 plot(newdf$DateTime, newdf$Global_active_power, type = "l",
